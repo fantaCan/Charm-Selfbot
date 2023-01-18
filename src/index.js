@@ -17,7 +17,7 @@ import { info, options } from "../settings/configs.js";
 import { exec } from 'child_process';
 import { cwd } from 'process';
 console.clear() 
-// exec("mode con: cols=85 lines=40")
+exec("mode con: cols=85 lines=40")
 const userData = await verifyToken(info.token);
 if (!userData.username) console.log("Invalid Token!"), process.exit(1)
 else {
